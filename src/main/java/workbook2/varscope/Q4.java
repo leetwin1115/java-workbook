@@ -1,5 +1,10 @@
 package main.java.workbook2.varscope;
 
+//class Demo {
+//    static String staticBlock = "static block";
+//
+//}
+
 public class Q4 {
     static {
         System.out.println("static block");

@@ -6,11 +6,15 @@ class Calculator {
     static String history = "";
     int add(int a, int b) {
         // TODO: 연산 결과 저장 후 반환
-        return 0;
+        int result = a + b;
+        history += a + " + " + b + " = " + result + "\n";
+        return result;
     }
     int sub(int a, int b) {
         // TODO: 연산 결과 저장 후 반환
-        return 0;
+        int result = a - b;
+        history += a + " - " + b + " = " + result + "\n";
+        return result;
     }
 }
 
@@ -30,5 +34,12 @@ public class Q5 {
             }
         }
         // TODO: results 배열과 Calculator.history 출력
+        System.out.println("=== Results ===");
+        for (int r : results) {
+            System.out.println(r);
+        }
+
+        System.out.println("=== History ===");
+        System.out.print(Calculator.history);
     }
 }
